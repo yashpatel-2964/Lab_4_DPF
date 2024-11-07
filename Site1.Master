@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Login_Demo.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="bg-gray-100">
+    <form id="form1" runat="server">
+        <nav class="bg-gray-800 shadow-md">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                        <div class="hidden sm:ml-6 sm:block">
+                            <div class="flex space-x-4">
+                                <a href="/Home.aspx" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 transition ease-in-out duration-150">Home</a>
+                                <a href="/login.aspx" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 transition ease-in-out duration-150">Login</a>
+                                <a href="/register.aspx" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 transition ease-in-out duration-150">Register</a>
+                                <a href="/users.aspx" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 transition ease-in-out duration-150">Users</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mx-auto py-6 px-4">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+</body>
+</html>
